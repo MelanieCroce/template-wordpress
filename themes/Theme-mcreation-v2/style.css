@@ -1,0 +1,771 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+	padding: 0;
+    margin: 0;
+}
+body {
+	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#444;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+
+.page-general {
+	/*margin-top: 100px;*/
+}
+
+/* header */
+.header {
+	position: fixed;
+	top:0;
+	z-index: 999999;
+	width: 100%;
+	height: 10vh;
+	background-color: #6f584d;
+	color: white;
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+
+.nav li {
+	display: inline;
+	font-size: 2.3em;
+    margin-left: 7vw;
+    text-transform: uppercase;
+    font-weight: 100;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.nav li:nth-of-type(1) {
+	margin-left: 13vw;
+}
+
+.nav li:nth-of-type(3) {
+	margin-left: 30vw;
+}
+
+.nav li a {
+	color: white;
+}
+
+.logo_temp {
+    width: 15vw;
+    margin-left: 42vw;
+    margin-top: -7vh;
+}
+
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+
+
+
+/* PAGE HOME */
+
+#home, #realisation {
+	min-height: 100vh;
+    background-size: cover;
+}
+
+#profil, #contact, #page_projet {
+	min-height: 90vh;
+	text-align: center;
+	padding-top: 50px;
+    background-size: 102%;
+    background-position: 0px -350px;
+}
+
+#profil {
+	text-align: inherit;
+	padding-top: 0px;
+}
+
+.titre_page {
+    position: absolute;
+    left: 34vw;
+    width: 400px;
+    height: 400px;
+    top: 22vh;
+    padding: 75px 0px;
+    background-color: #cae7ee;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.titre_page h1, .titre_page h2, .titre_page h3, .titre_page h4 {
+    margin: 0.67em 0;
+    color: #6f584d;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 6.3em;
+	margin: 0;	
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.titre_page h2 {
+	color: #576c6e;
+	font-size: 4.3em;
+}
+
+.titre_page h3 {
+	color: #98c5d0;
+	font-size: 3.5em;
+}
+
+.titre_page h4 {
+	color: #68aab3;
+	font-size: 3em;
+}
+
+.r_s_page {
+    position: absolute;
+    left: 34vw;
+    width: 30vw;
+    text-align: center;
+    top: 82vh;
+}
+
+.r_s_page a div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    margin: auto;
+	display: inline-block;
+}
+
+.r_s_page a:nth-of-type(1) div {
+    background-color: #74d3ff;
+}
+
+.r_s_page a:nth-of-type(2) div {
+    background-color: #4b9bc0;
+}
+
+.r_s_page a:nth-of-type(3) div {
+    background-color: #31399b;
+}
+
+.fleche {
+    position: absolute;
+    left: 34vw;
+    width: 30vw;
+    text-align: center;
+    top: 91vh;
+}
+
+.contour {
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.photo {
+	width: 30vh;
+	height: 500opx;
+}
+
+.descrip {
+    width: 50vw;
+    font-size: 1.6em;
+}
+
+
+.photo_contour {
+    width: 20vw;
+    height: 50vh;
+	overflow: hidden;
+    background-size: 100%!important;
+    background-position: 0px -15px!important;
+	background-repeat: no-repeat!important;
+}
+
+#realisation {
+	text-align: inherit;
+	padding-top: 0;
+    background-color: #6f584d;
+}
+
+
+
+/***** PORTOLIO ******/
+
+.img_projet {
+    min-height: 90vh;
+    display: inline-block;
+    margin-left: -3px;	
+	overflow: hidden;
+}
+
+.img_projet img, .img_projet_portofolio img {
+    transform: scale(1.8);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+.img_projet img:hover, .img_projet_portofolio img:hover {
+	transform: scale(2);
+}
+
+#btn_plus {
+    text-transform: uppercase;
+}
+
+#btn_plus a {
+    font-size: 20px;
+    color: white;
+}
+
+#realisation h1 {
+	text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    background: #97c2c9;
+	font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;	
+}
+
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    background-color: #97c2c9;
+    margin: 0 0 -20px;
+    padding: 18px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/********** CONTACT *********/
+
+.form {
+    width: 40vw;
+}
+
+.descrip_form {
+    width: 30vw;
+	font-size: 1.6em;
+	margin-top: 20vh;
+}
+
+
+#contact .contour {
+	padding-top:0px;
+	margin-top: 0px;
+}
+
+#contact {
+    background-color: #af9385;
+    color: white;	
+}
+
+.smform-submit {
+    background: #97c2c9;
+    border: none;
+    padding: 7px 40px !important;
+    text-transform: uppercase;
+}
+
+
+/***************** PAGE PROJET *******************/
+.img_projet_portofolio {
+	overflow: hidden;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    background: #97c2c9;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#portfolio {
+	min-height: 90vh;
+	margin-top: 10vh;
+	background: #6f584d;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+	border-radius: 0px !important;
+	background: transparent!important;
+	opacity: 1!important;
+}
+
+
+/** SINGLE PROJET **/
+#page_projet {
+	min-height: 100vh;
+}
+
+#page_projet h1 {
+	text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    background: #97c2c9;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.img_prez {
+    width: 80vw;
+    max-height: 70vh;
+    border: 5px solid #af9385;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 5vh;	
+}
+
+#page_projet p {
+	width: 80vw;
+    margin: auto;
+    min-height: 20vh;
+    font-size: 1.5em;
+}
+
+#page_projet button {
+    border: none;
+    padding: 1vh 10vw;
+    background: #6f584d;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 5vh;
+    color: white;
+}
+
+				/********* RESPONSIVE ********/
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 728px) {
+	.header {
+		height: 7vh;
+	}
+	nav ul {
+		margin-left: 0;
+    	padding-left: 5px;
+	}
+	.nav li {
+    display: inline;
+    font-size: 1.7em;
+    margin-left: 2vw;
+	}
+	.nav li:nth-of-type(1) {
+		margin-left: 10vw;
+	}
+	.nav li:nth-of-type(3) {
+		margin-left: 0;
+	}	
+	.link_home {
+		display:none;
+	}
+	
+	.r_s_page {
+    	left: 25vw;
+    	top: 82vh;
+		width: 60vw;
+	}
+	.titre_page {
+    	left: 3vw;
+    	top: 15vh;
+	    padding: 50px 0px;
+		width: 300px;
+		height: 300px;
+	}
+	.descrip {
+    	width: 65vw;
+    	font-size: 1.5em;
+	}
+	.photo_contour {
+    	width: 65vw;
+    	height: 70vh;
+	}
+	
+	.fleche {
+	    left: 40vw;
+	}
+	.titre_page h1 {
+	    font-size: 4.3em;
+	}
+	
+	.contour {
+		margin-left: 0px;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	.header {
+		height: 7vh;
+	}
+	nav ul {
+		margin-left: 0;
+    	padding-left: 5px;
+	}
+	.nav li {
+    display: inline;
+    font-size: 1.7em;
+    margin-left: 2vw;
+	}
+	.nav li:nth-of-type(1) {
+		margin-left: 0;
+	}
+	.nav li:nth-of-type(3) {
+		margin-left: 0;
+	}	
+	.link_home {
+		display:none;
+	}	
+	.r_s_page {
+    	left: 25vw;
+    	top: 82vh;
+		width: 60vw;
+	}
+	.titre_page {
+    	left: 5vw;
+    	top: 15vh;
+	    padding: 50px 0px;
+	}
+	.descrip {
+    	width: 70vw;
+    	font-size: 1.6em;
+	}
+	.photo_contour {
+    	width: 65vw;
+    	height: 70vh;
+	}
+	
+	.fleche {
+	    left: 40vw;
+	}
+	.titre_page h1 {
+	    font-size: 4.3em;
+	}
+}
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
